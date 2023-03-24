@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class PostController {
+public class BlogPostController {
 
     @GetMapping("/posts")
     @ResponseBody

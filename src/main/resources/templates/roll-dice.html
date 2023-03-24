@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="">
+<html lang="en">
+
+<head th:replace="head">
+    <title th:replace="${title}">Roll the Dice</title>
+</head>
+
+</th:insert>
+<body>
+<h1>Guess a number from 1 through 6</h1>
+
+Guess #1
+<br>
+Guess #2
+<br>
+Guess #3
+<br>
+Guess #4
+<br>
+Guess #5
+<br>
+Guess #6
+
+<span th:insert="script-ref"></span>
+</body>
+</html>
