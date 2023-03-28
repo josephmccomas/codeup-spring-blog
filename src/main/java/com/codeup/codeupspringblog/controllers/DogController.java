@@ -43,7 +43,7 @@ public class DogController {
     @GetMapping(path = "/create")
     @ResponseBody
     public String createDog(){
-        Dog dog = new Dog();
+        Dog dog = new Dog(1, "name");
         dog.setName("Scratchy");
 
         dogDao.save(dog);

@@ -24,4 +24,9 @@ public class Dog {
 
     @Column(length = 1024, nullable = false, unique = true)
     private String name;
+
+    public Dog(long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }
