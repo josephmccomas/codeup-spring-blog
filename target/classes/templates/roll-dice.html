@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="" lang="en">
+
+<head th:insert="head">
+    <title th:replace="${title}">Roll the Dice</title>
+</head>
+
+<body style="background-color: darkgrey">
+<h1>Guess a number from 1 through 6</h1>
+
+<button class="btn btn-outline-secondary" type="submit" name="1">Guess the #1</button>
+<br>
+<button class="btn btn-outline-secondary" type="submit" name="2">Guess the #2</button>
+<br>
+<button class="btn btn-outline-secondary" type="submit" name="3">Guess the #3</button>
+<br>
+<button class="btn btn-outline-secondary" type="submit" name="4">Guess the #4</button>
+<br>
+<button class="btn btn-outline-secondary" type="submit" name="5">Guess the #5</button>
+<br>
+<button class="btn btn-outline-secondary" type="submit" name="6">Guess the #6</button>
+<br>
+<br>
+<h1>The dice roll is: <span th:onsubmit="${rando}"></span></h1>
+<span th:insert="script-ref"></span>
+</body>
+</html>
